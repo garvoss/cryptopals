@@ -13,10 +13,7 @@ if __name__ == '__main__':
     result = 0
     mask = 1
     while (mask < binary2 or mask < binary1):
-        #print(str(mask))
         result += (binary1 & mask) ^ (binary2 & mask)
         mask = mask << 1
 
-
     print(hex(result))
-    # print(hex(binary1))
